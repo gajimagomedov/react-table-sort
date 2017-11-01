@@ -1,5 +1,6 @@
 import React from 'react';
-import activeUser from '../user.svg'
+import activeUser from '../user.svg';
+
 
 function ActiveUser({data, active}){
 
@@ -8,7 +9,7 @@ function ActiveUser({data, active}){
     const user = data[active];
 
     return(
-        <div className="active-user">
+        <div className="active-user" id="active-user">
             <img src={activeUser} className="active-user__img" alt="user"/>
             <div className="user-info">
                 <h3 className="user-info__select">{`${user.firstName} ${user.lastName}`}</h3>
