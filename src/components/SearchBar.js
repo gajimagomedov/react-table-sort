@@ -2,7 +2,6 @@ import React, {Component} from "react";
 
 
 function SearchBar({term, data, update}) {
-    console.log(data);
 
     const dataSearch = e => {
         const value = e.target.value.toLowerCase();
@@ -16,7 +15,6 @@ function SearchBar({term, data, update}) {
             active: 0,
             term: value
         })
-
     };
 
     return (
@@ -30,9 +28,6 @@ function SearchBar({term, data, update}) {
             />
         </div>
     );
-
-
-
 }
 
 
