@@ -1,6 +1,7 @@
 import React ,{Component} from 'react';
 import PropTypes from 'prop-types';
 import UserData from './UserData';
+import SortBar from './SortBar';
 
 
 function UserList({data , update}){
@@ -11,15 +12,7 @@ function UserList({data , update}){
 
 	return(
 		<table className="table-list" cellSpacing="0">
-		<thead>
-			<tr>
-				<th>id</th>	
-				<th>Имя</th>
-				<th>Фамилия</th>
-				<th>Mail</th>
-				<th>Телефон</th>
-			</tr>
-		</thead>
+			<SortBar data={data} update={update} />
 		<tbody>
 			{users}
 		</tbody>
